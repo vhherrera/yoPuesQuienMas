@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: poppin;
+    font-family: 'Poppins', sans-serif;
+    /* overflow: hidden; */
+}
+
+body{
+    background: #f2f2f2;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* NAV */
+
+nav {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    margin-top: -60px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    transition: .3s ease-in-out;
+    background: #f2f2f2;
+}
+
+nav.nav-visible {
+    margin-top: 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: center;
+}
+
+nav .container a {
+    margin: 0 10px;
+    color: #333;
+    font-weight: 600;
+}
+
+nav .container a:hover {
+    color: rgba(51, 51, 51, .5);
+}
+
+#nav-desktop {
+    border-bottom: 1px solid #333;
+}
+
+#nav-mobile {
+    margin-top: 0;
+    right: -100%;
+    height: 100vh;
+}
+
+#nav-mobile .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+#nav-mobile .container a {
+    margin: 15px 0;
+}
+
+#btn-burguer {
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+    font-size: 2.5rem;
+    position: fixed;
+    right: 30px;
+    top: 8px;
+    z-index: 100;
+    transition: .5s ease-in-out;
+}
+
+#btn-burguer.animationRight {
+    right: -100%;
+}
+
+/* MENU HAMBURUER */
+
+#btn-burguer-mobile div, #btn-burguer div {
+    height: 5px;
+    background: #333;
+    width: 100%;
+    margin: 7px 0;
+    transition: .4s ease-in-out;
+}
+
+#btn-burguer-mobile.rotate .div1 {
+    transform: rotate(-45deg) translate(-9px, 8px);
+}
+
+#btn-burguer-mobile.rotate .div2 {
+    transform: rotate(-45deg) translate(-1px, -1px);
+    opacity: 0;
+}
+
+#btn-burguer-mobile.rotate .div3 {
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+/* HEADER */
+
+header .opacidad-banner {
+    background: #f2f2f2;
+}
+
+header .banner {
+    position: relative;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/banner-svg.svg);
+    /* background-attachment: fixed; */
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+
+
+header .title-header {
+    position: absolute;
+    z-index: 5;
+    background: rgba(51, 51, 51, .4);
+    border-radius: 5px;
+    line-height: 80px;
+    margin-top: -10px;
+}
+
+header h1 {
+    color: #f2f2f2;
+    padding: 30px 30px 0;
+    font-size: 8rem;
+    border-radius: 10px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+header h6 {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0 30px 20px;
+    font-size: 2rem;
+    border-radius: 10px;
+    text-shadow: 3px 3px 0 #333, -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 1px 1px 0 #333;
+    font-family: 'Amaranth', sans-serif;
+    font-style: italic;
+}
+
+/* RESPONISVE */
+
+@media screen and (max-width: 767px) {
+    header h1 {
+        font-size: 4.5rem;
+    }
+    header h6 {
+        font-size: 2.5rem;
+    }
+    header .banner {
+        background-size: 80%;
+    }
+    header .title-header {
+        line-height: 50px;
+    }
+    #btn-burguer {
+        display: none;
+    }
+    #btn-burguer-mobile {
+        cursor: pointer;
+        height: 35px;
+        width: 35px;
+        font-size: 2.5rem;
+        position: fixed;
+        right: 30px;
+        top: 8px;
+        z-index: 100;
+        transition: .5s ease-in-out;
+    }
+    #btn-burguer-mobile.animationRight {
+        right: -100%;
+    }
+    #nav-mobile.nav-sm {
+        /* margin-top: 0; */
+        right: 0;
+        height: 100vh;
+    }
+}

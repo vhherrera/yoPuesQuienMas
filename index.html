@@ -1,11 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Proyecto</title>
+    <script src="https://kit.fontawesome.com/cbf9dcc1e6.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Kaushan+Script&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
+
 <body>
-    <h1>Hola</h1>
+    <nav id="nav-desktop">
+        <div class="container">
+            <a href="#">HOME</a>
+            <a href="#">PROJECTS</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">CONTACT</a>
+            <a href="#">REDES SOCIALES</a>
+        </div>
+        <a id="btn-burguer">
+            <div class="div1"></div>
+            <div class="div2"></div>
+            <div class="div3"></div>
+        </a>
+    </nav>
+    <nav id="nav-mobile">
+        <div class="container">
+            <a href="#">HOME</a>
+            <a href="#">PROJECTS</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">CONTACT</a>
+            <a href="#">REDES SOCIALES</a>
+        </div>
+        <a id="btn-burguer-mobile">
+            <!-- <i class="fas fa-bars"></i> -->
+            <div class="div1"></div>
+            <div class="div2"></div>
+            <div class="div3"></div>
+        </a>
+    </nav>
+    <header>
+        <div class="opacidad-banner">
+            <div class="banner"></div>
+            <!-- <div class="title-header">
+                <h1>HUELLITAS</h1>
+                <h6>VETERINARIA</h6>
+            </div> -->
+        </div>
+    </header>
+    <!-- ACERCA ME MI -->
+    <div class="about-me">
+        <h1>Acerca de Mí</h1>
+        <div class="about-content">
+            <div class="title-about-me">
+                <p><i class="fas fa-bolt" style="margin-right: 10px;"></i>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Sed minima voluptate pariatur! Nemo atque dolor at cupiditate et ea perspiciatis?
+                </p>
+                <p style="margin-top: 15px;"><i class="fas fa-bolt" style="margin-right: 10px;"></i>Lorem ipsum dolor
+                    sit amet consectetur, adipisicing elit. Eos harum sequi animi obcaecati, quibusdam laudantium
+                    numquam, non natus placeat assumenda eaque cupiditate voluptatem fugiat in commodi ipsa voluptate
+                    fuga perferendis.</p>
+                <p style="margin-top: 25px; font-weight: 900;">Y eso es to, y eso es to, y eso es todo amigo xD</p>
+            </div>
+            <div class="slider-about-me">
+                <div id="arrowLeft" class="arrowLeft-slider"><i class="fas fa-arrow-left"></i></div>
+                <div id="slider" class="slider-imagesBx">
+                    <div class="slide">
+                        <img src="img/slider-photo.png" alt="Slide">
+                    </div>
+                    <div class="slide">
+                        <img src="img/slider-programacion.jpg" alt="Slide">
+                    </div>
+                    <div class="slide">
+                        <img src="img/slider-karaoke.jpg" alt="Slide">
+                    </div>
+                    <div class="slide">
+                        <img src="img/slider-deporte.jpg" alt="Slide">
+                    </div>
+                </div>
+                <div id="arrowRight" class="arrowRight-slider"><i class="fas fa-arrow-right"></i></div>
+            </div>
+        </div>
+    </div>
+    <!-- PORTFOLIO -->
+    <div class="portfolio">
+        <div class="container">
+            <div class="title-portfolio">
+                <h1>Proyectos</h1>
+            </div>
+        </div>
+    </div>
+    <!-- LOGIN -->
+    <div class="section-login">
+        <div class="container">
+            <div class="user singiBx">
+                <div class="imgBx"><img src="img/bg-login.jpg"></div>
+                <div class="frmBx">
+                    <form>
+                        <h2>Ingresar</h2>
+                        <input type="text" name="" id="" placeholder="Usuario">
+                        <input type="password" name="" id="" placeholder="Contraseña">
+                        <input type="submit" value="Ingresar">
+                        <p class="signup">No estas registrado? <a id="linkRegistrar">Registrate</a></p>
+                    </form>
+                </div>
+            </div>
+            <div class="user singupBx">
+                <div class="frmBx">
+                    <form>
+                        <h2>Crear cuenta</h2>
+                        <input type="text" name="" id="" placeholder="Ingresar usuario">
+                        <input type="email" name="" id="" placeholder="Ingresar email">
+                        <input type="password" name="" id="" placeholder="Ingresar contraseña">
+                        <input type="password" name="" id="" placeholder="Confirmar contraseña">
+                        <input type="submit" value="Registrar">
+                        <p class="signup">Ya tienes una cuenta? <a id="linkIngresar">Ingresa</a></p>
+                    </form>
+                </div>
+                <div class="imgBx"><img src="img/bg-login2.jpg"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="part-foo">
+            <a href="#">Legal Warning</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookies Policy</a>
+            <a href="#">Quality Policy</a>
+        </div>
+        <div class="part-foo">
+            <div class="foo-logo"><img src="img/banner-svg-footer.svg"></div>
+            <div class="foo-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="part-foo">
+            <a href="#">Tarrago</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+            <a href="#">FAQs</a>
+        </div>
+    </footer>
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/top-nav.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/slider.js"></script>
 </body>
+
 </html>

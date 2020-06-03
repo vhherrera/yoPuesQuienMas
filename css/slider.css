@@ -1,0 +1,92 @@
+.about-me {
+    height: 500px;
+    padding: 50px 0;
+}
+
+.about-me h1{
+    text-align: center;
+    color: #677eff;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.about-content {
+    display: flex;
+}
+
+.title-about-me {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.slider-about-me {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider-about-me .slider-imagesBx {
+    width: 400%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.slider-about-me .slider-imagesBx .slide {
+    width: 20%;
+    max-width: 500px;
+    margin-right: 0.7%;
+    /* box-shadow: 0px 20px 40px #aaa; */
+    margin: 0 auto;
+}
+
+.slider-about-me .slider-imagesBx .slide img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.arrowLeft-slider, .arrowRight-slider {
+    font-size: 2rem;
+    color: #f2f2f2;
+    background: #677eff;
+    padding: 10px 20px;
+    border-radius: 100%;
+}
+
+.arrowLeft-slider {
+    z-index: 50;
+    position: absolute;
+    top: 45%;
+    left: 2%;
+}
+
+.arrowRight-slider {
+    z-index: 50;
+    position: absolute;
+    top: 45%;
+    right: 2%;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 767px) {
+    .about-me {
+        height: auto;
+    }
+    .about-content {
+        flex-direction: column-reverse;
+    }
+    .title-about-me {
+        width: 100%;
+    }
+    .slider-about-me {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+}
